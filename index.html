@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Progress report</title>
+<meta charset='utf-8'>
+<meta content='7th progress report' name='description'>
+<meta content='Matteo Abis' name='author'>
+<meta content='yes' name='apple-mobile-web-app-capable'>
+<meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="stylesheets/all.css" rel="stylesheet" />
+<link href="vendor/eth-reveal-theme/eth.css" rel="stylesheet" id="theme" />
+<script src="vendor/reveal/lib/js/head.min.js"></script>
+<script src="javascripts/reveal_print_pdf.js"></script>
+<!--[if lt IE 9]>
+<script src="vendor/reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body class='index'>
+<div class='reveal'>
+<img align='left' alt='ETH Logo' src='vendor/eth-reveal-theme/images/eth-logo.jpg' width='15%'>
+<img align='right' alt='PSI Logo' src='vendor/eth-reveal-theme/images/psi-logo.jpg' width='15%'>
+<div class='slides'>
+<section data-background-position='bottom' data-background-size='100%' data-background='vendor/eth-reveal-theme/images/ETHbackground.png'>
+<h2>High-energy sources towards 2D applications</h2>
+</section>
+<section>
+<h2>Goals and motivation</h2>
+<ul>
+<li>feasibility of phase contrast on tubes with \(>100\) kVp</li>
+<li>typical environment for medical, security and material science applications</li>
+<li>characterize physical quantities</li>
+</ul>
+</section>
+<section>
+<h2>Outline</h2>
+<ul>
+<li>technical studies</li>
+<ul>
+<li>evaluation of KIT gratings</li>
+<li>pilatus detector</li>
+</ul>
+<li>applications</li>
+<ul>
+<li>materials: powders</li>
+<li>biomedical: cartilage</li>
+<li>biomedical: lungs</li>
+</ul>
+</ul>
+</section>
+<section>
+<section>
+<h2>KIT gratings from Maria</h2>
+<ul>
+<li>various grating sets for 30 and 45 \(\pi\) shift</li>
+<li>
+short summary: gratings are ok, homogeneity and absorption
+thickness are the main concerns.
+</li>
+<li>\(\lt 100\) μm gold forces the smaller focal spot (1 mm)</li>
+<li>visibility 8-10% for most sets</li>
+<li class='alert alert-success'>best configuration averaging 15%</li>
+</ul>
+</section>
+<section>
+<h2>Best configuration</h2>
+<ul>
+<li>100 μm G0, 140 μm G2, \(\pi\) shift 45 keV</li>
+<li>eiger 1M detector</li>
+<li>80 kVp, 1 mm focal spot</li>
+</ul>
+<img src="images/best_visibility.png" style="width: 50vw" alt="Best visibility" />
+</section>
+<section>
+<h2>Conclusions for our fabrication team</h2>
+<ul>
+<li>80 μm G0, 140 μm G2, \(\pi\) shift 45 keV</li>
+<li>pilatus CdTe detector</li>
+</ul>
+<img src="images/visibility_energy.png" style="width: 50vw" alt="Visibility energy" />
+</section>
+<section>
+<h2>Conclusions for our fabrication team</h2>
+<ul>
+<li>increasing from 80 to 100 μm is significant</li>
+<li class='alert alert-warning'>this is the minimum thickness for the setup</li>
+</ul>
+</section>
+</section>
+<section>
+<section>
+<h2>Powder analysis</h2>
+<h3>Goals</h3>
+<ul>
+<li>material discrimination</li>
+<li>measurement of structural properties</li>
+</ul>
+<h3>Tool</h3>
+<p>\( R = \frac{\log(\text{dark field})}{\log(\text{absorption})} \)</p>
+</section>
+<section>
+<h2>Eggs containing different powders</h2>
+<img src="images/series.160803.111406662926_series.160803.111112810409.png" style="width: 50vw" alt="Series.160803.111406662926 series.160803.111112810409" />
+</section>
+<section>
+<h2>Calibration</h2>
+<img src="https://github.com/Enucatl/pilatus_powders_microspheres/raw/master/plots/summary.png" style="width: 70vw" />
+</section>
+<section>
+<h2>Real life samples</h2>
+<img src="https://github.com/Enucatl/pilatus_powders_microspheres/raw/master/plots/powder_summary.png" style="width: 70vw" />
+</section>
+<section>
+<h2>Conclusions</h2>
+<ul>
+<li class='alert alert-success'>good discrimination</li>
+<li class='alert alert-success'>independent of thickness</li>
+<li class='alert alert-success'>qualitative assessment of microscopic features</li>
+<li class='alert alert-success'>re-opens the way to Spyros' drug sample measurements</li>
+<li class='alert alert-danger'>quantitative measurement very difficult</li>
+</ul>
+</section>
+</section>
+<section>
+<section>
+<h2>Cartilage delineation</h2>
+<ul>
+<li>Made famous by prof. Momose in Japan</li>
+<li>Fresh (supermarket) chicken toe samples</li>
+<li>Pilatus, 45 keV \(\pi\) shift</li>
+</ul>
+</section>
+<section>
+<img src="https://github.com/Enucatl/chicken_paws/raw/master/plots/series.160729.170729669658_series.160729.171501073073.png" style="width: 50vw" />
+</section>
+<section>
+<img src="https://github.com/Enucatl/chicken_paws/raw/master/plots/series.160802.135434008170_series.160802.140709807259.png" style="width: 50vw" />
+</section>
+</section>
+<section>
+<section>
+<h2>Lung microstructure</h2>
+<ul>
+<li>Goran and Yannis working on rat lung samples</li>
+<li class='alert alert-danger'>negative results from heavy metal staining</li>
+<li class='alert alert-success'>interesting smoked/emphysema dried samples</li>
+<li>Eiger 1M detector</li>
+</ul>
+</section>
+<section>
+<p class='alert alert-warning'>Very preliminary!</p>
+<img src="https://github.com/Enucatl/dried_lung_samples/raw/master/plots/ratio.png" style="width: 45vw" />
+</section>
+<section>
+<h2>Next step</h2>
+<ul>
+<li>Comprehensive study with beamline DPC and microtomography images by Goran</li>
+</ul>
+</section>
+</section>
+<section>
+<section>
+<h2>Conclusions</h2>
+<ul>
+<li>general purpose grating interferometer at TOMCAT</li>
+<li>high flux</li>
+<li>high setup customizability</li>
+<li>exposure times down from one day to one minute</li>
+<li class='alert alert-success'>dark-field imaging looks qualitatively promising</li>
+<li class='alert alert-danger'>still no good model for quantitative results</li>
+</ul>
+</section>
+<section>
+<h2>Acknowledgements</h2>
+<ul>
+<li>Gordan and Thomas for the amazing technical support</li>
+<li>Tine for installing and configuring all the new motors</li>
+<li>Maria for aligning most of the gratings</li>
+<li>Spyros for getting the Pilatus</li>
+<li>Goran and Yannis for getting the lung samples from Bern</li>
+<li>All of you for your attention and the upcoming discussion</li>
+</ul>
+</section>
+</section>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="javascripts/all.js"></script>
+</body>
+</html>
